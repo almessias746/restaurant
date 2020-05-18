@@ -17,8 +17,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<docker.image.name> almessias746/dockerize-spring </docker.image.name>
-		<docker.image.tag> latest </docker.image.tag>
+		<docker.image.name>almessias746/sioux</docker.image.name>
+		<docker.image.tag>latest</docker.image.tag>
 	</properties>
 
 	<dependencies>
@@ -33,12 +33,28 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>	
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+  <dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+	</dependency>
+	<dependency>
+		<groupId>javax.persistence</groupId>
+		<artifactId>persistence-api</artifactId>
+		<version>1.0.2</version>
+		<scope>provided</scope>
+</dependency>
+	<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.0.2.GA</version>
+	</dependency>
         <!-- debugging -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
