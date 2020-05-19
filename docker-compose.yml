@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+    backend:
+        image: restaurant-backend
+        ports:
+            - "80:80"
+    database:
+        image: restaurant-db
+        ports:
+            - "3306:3036"
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: restaurant
+            MYSQL_USER: restaurant
+            MYSQL_PASSWORD: password
+volumes:
+    db-volume:
